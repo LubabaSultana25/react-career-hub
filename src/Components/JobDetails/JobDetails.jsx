@@ -3,6 +3,7 @@ import { AiOutlineDollar, AiOutlineMail } from "react-icons/ai";
 import { SlCalender, SlPhone, SlLocationPin } from "react-icons/sl";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from "../Utility/LocalStorage";
 const JobDetails = () => {
 
     const jobs = useLoaderData();
@@ -12,6 +13,7 @@ const JobDetails = () => {
     console.log(job);
 
     const handleApplyJob = () => {
+        saveJobApplication(id)
     toast('You have Applied Successfully')
     
     }
