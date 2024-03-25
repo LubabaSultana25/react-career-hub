@@ -94,7 +94,7 @@ const JobDetails = () => {
 
                     </div>
                     <div className="card-actions justify-center py-4">
-                        <button onClick={handleApplyJob} className="btn bg-[#9873FF] w-full">Buy Now</button>
+                        <button onClick={handleApplyJob} className="btn bg-[#9873FF] w-full">Apply Now</button>
                     </div>
 
                 </div>
